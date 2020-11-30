@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScriptStudies</title>
+</head>
+<body>
+	<script type="text/javascript">
+		document.write ("<h2>" +document.title+ "<h2>");
+	</script>
+
+	<p id="paragrafo">Olá!</p>
+
+		<script type="text/javascript">
+			function mf() {
+				var x = document.getElementById('paragrafo')
+				x.innerHTML = "Hello"
+			}
+		</script>
+		<button type="button" onclick="mf()">Translate</button> <br>
+
+		<input type="text" id="v1"> <br>
+		<input type="text" id="v2">
+		<p id="res">Resposta: </p>
+		<button type="button" onclick="s()">Soma</button>
+
+		<script type="text/javascript">
+			function s() {
+					var e1 = Number(document.getElementById("v1").value)
+					var e2 = Number(document.getElementById("v2")value)
+					var r =  document.getElementById("res")
+					document.write.r.innerHTML = " Resposta: " + (e1 + e2)
+				}
+		</script>
+
+</body>
+</html>
